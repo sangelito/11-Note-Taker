@@ -11,8 +11,14 @@ const PORT = process.env.PORT || 3001;
 // initialize app 
 const app = express (); 
 
-// pase incoming data 
+// parse incoming data 
+app.use(express.urlencoded({ extended: true }));
+//parse JSON data 
+app.use(express.json());
+app.use(express.static("public"));
 
+const parsedNotes = Json.parse(Notes);
+console.info("parsed notes", parsedNotes);
 // route for notes 
 
 // route for api 
