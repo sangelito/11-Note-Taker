@@ -4,8 +4,8 @@ const htmlRoutes = require("./routes/htmlroute");
 const apiRoutes = require("./routes/apiroute");
 
 // JSON files = termData
-const { request } = require("http");
-const termData = require("./terms.json");
+// const { request } = require("http");
+// const termData = require("./terms.json");
 const PORT = process.env.PORT || 3001;
 
 // initialize app 
@@ -17,8 +17,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
 
-const parsedNotes = Json.parse(Notes);
-console.info("parsed notes", parsedNotes);
+// const parsedNotes = Json.parse(Notes);
+// console.info("parsed notes", parsedNotes);
 // route for notes 
 // app.get("/notes", (req, res) => {
 //     res.sendFile(path.join(__dirname, "public/notes.html"));
