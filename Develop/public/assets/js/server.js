@@ -8,3 +8,11 @@ const { request } = require("http");
 const termData = require("./terms.json");
 const PORT = process.env.PORT || 3001;
 
+// initialize app 
+
+// pase incoming data 
+
+// route for notes 
+
+// route for api 
+
