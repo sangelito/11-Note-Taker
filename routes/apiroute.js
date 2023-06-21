@@ -1,12 +1,10 @@
-// const { Router } = require("express");
-// const { uuid } = require("crypto");
 var db = require("../db/db.json");
 var fs = require("fs");
 
 const path = require("path");
 const router = require("express").Router();
 
-
+//working delete function
 router.delete("/notes/:id", (req, res) => {
     const note = parsedNotes[req.params.id];
   });
