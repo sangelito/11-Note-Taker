@@ -4,10 +4,10 @@ var fs = require("fs");
 const path = require("path");
 const router = require("express").Router();
 
-//working delete function
-router.delete("/notes/:id", (req, res) => {
-    const note = parsedNotes[req.params.id];
-  });
+// //working delete function
+// router.delete("/notes/:id", function (req, res) {
+//   var id = req.params.id;
+//   });
 
 //route to api
 router.get("/notes", function (req, res) {
