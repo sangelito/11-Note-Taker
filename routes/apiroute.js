@@ -5,16 +5,17 @@ var fs = require("fs");
 
 const path = require("path");
 const router = require("express").Router();
-//GET route for notes
+
+
 router.delete("/notes/:id", (req, res) => {
     const note = parsedNotes[req.params.id];
   });
 
 //route to api
-router.get("/notes", (req, res) => res.json(notes));
+router.get("/notes", (req, res) => res.json(db));
 
   // API POST Request
-  router.post("/api/notes", function (req, res) {
+  router.post("/notes", function (req, res) {
     // Receive a new note to save on the request body, add it to the db.json file
     db.push(req.body);
     // Add unique id to each note
