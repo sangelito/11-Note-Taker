@@ -9,6 +9,7 @@ const termData = require("./terms.json");
 const PORT = process.env.PORT || 3001;
 
 // initialize app 
+const app = express (); 
 
 // pase incoming data 
 
