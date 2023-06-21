@@ -1,6 +1,6 @@
 const express = require("express");
 const path = require("path");
-const htmlRoutes = require("../routes/htmlroute");
+const htmlRoutes = require("./routes/htmlroute");
 const apiRoutes = require("./routes/apiroute");
 
 // JSON files = termData
@@ -20,9 +20,9 @@ app.use(express.static("public"));
 const parsedNotes = Json.parse(Notes);
 console.info("parsed notes", parsedNotes);
 // route for notes 
-app.get("/notes", (req, res) => {
-    res.sendFile(path.join(__dirname, "public/notes.html"));
-  });
+// app.get("/notes", (req, res) => {
+//     res.sendFile(path.join(__dirname, "public/notes.html"));
+//   });
 // route for api 
 app.use("/api", apiRoutes);
 app.use("/", htmlRoutes);
