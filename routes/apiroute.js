@@ -12,7 +12,9 @@ router.delete("/notes/:id", (req, res) => {
   });
 
 //route to api
-router.get("/notes", (req, res) => res.json(db));
+router.get("/notes", function (req, res) {
+  res.json(db);
+});
 
   // API POST Request
   router.post("/notes", function (req, res) {
